@@ -1,4 +1,4 @@
-#include "convert_ascii_2_bin.h"
+#include "ascii_to_bin.h"
 
 ///
 //Reading model from an ASCII file

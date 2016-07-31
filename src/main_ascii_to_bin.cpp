@@ -2,7 +2,7 @@
 #include <iostream>
 #include <sstream>
 
-#include "convert_ascii_2_bin.h"
+#include "ascii_to_bin.h"
 
 #define CHAB_PATH "../input/chab_hr/" 
 #define SALP_PATH "../input/salp_hr/" 

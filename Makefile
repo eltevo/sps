@@ -47,13 +47,13 @@ $(ODIR)/sps_write.o : $(SRC)/sps_write.cpp $(IDIR)/sps_write.h
 
 
 #Building converter
-$(BIN)/convert_ascii_2_bin : $(ODIR)/main_convert_ascii_2_bin.o  $(ODIR)/convert_ascii_2_bin.o 
+$(BIN)/ascii_to_bin : $(ODIR)/main_ascii_to_bin.o  $(ODIR)/ascii_to_bin.o 
 	$(LINK) -o $@ $^
 
-$(ODIR)/main_convert_ascii_2_bin.o : $(SRC)/main_convert_ascii_2_bin.cpp
+$(ODIR)/main_ascii_to_bin.o : $(SRC)/main_ascii_to_bin.cpp
 	$(CXX) -c -o  $@ $< $(CXXFLAGS) 
 
-$(ODIR)/convert_ascii_2_bin.o : $(SRC)/convert_ascii_2_bin.cpp $(IDIR)/convert_ascii_2_bin.h
+$(ODIR)/ascii_to_bin.o : $(SRC)/ascii_to_bin.cpp $(IDIR)/ascii_to_bin.h
 	$(CXX) -c -o  $@ $< $(CXXFLAGS)
 
 
